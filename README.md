@@ -20,8 +20,10 @@ With all of this information in mind, we can now recreate a half adder using int
 In the image above, the half adder is adding two binary zeros together. This explains why both the S and Cout LEDs are off—since 0 + 0 results in a sum of 0 and a carry of 0. To change the bits being added, we simply need to toggle either the first or last switch. Below, I flip switch B on, meaning the half adder is now adding 0 and 1 together.
 
 ![image](https://github.com/user-attachments/assets/cda51271-37ff-42e6-bb7a-e8524d02ef81)
+
 This combination illuminates the S LED because 0 + 1 equals 1. Both of these examples make sense, but something interesting happens when we flip both inputs on.
 ![image](https://github.com/user-attachments/assets/350a11e0-877f-4353-8d64-086b6150aa00)
+
 Since a single LED can't represent the binary number 2, we must turn the Sum LED off and carry the extra value to the next place in the addition. This is similar to how, in decimal, adding any number to 9 results in at least two digits (e.g., 9 + 1 = 10, 9 + 6 = 15). The key difference is that binary only has two possible states (0 and 1), whereas decimal uses ten (0 through 9).
 
 However, a half adder is just one small part of the equation. To add numbers larger than 1 bit, a full adder is needed. A full adder consists of two half adders connected by an OR gate. This setup allows the circuit to take three inputs instead of two, with the additional input (Cin) representing the carry value from the previous adder.
