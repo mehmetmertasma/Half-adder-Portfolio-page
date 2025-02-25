@@ -5,6 +5,9 @@ As a brief recap, binary numbers consist only of 0s and 1s, unlike decimal numbe
 (Justice, 2020, p. 76)
 In the diagram, the half adder (HA) takes two inputs, A and B, representing the two binary digits to be added. The sum is output through S, while Cout represents the carry digit, which is passed to the next place value. The half adder consists of two logic gates: an XOR gate and an AND gate. The XOR gate computes the sum, while the AND gate determines the carry value.
 ![halfaddergates](https://github.com/user-attachments/assets/70be830b-f2a4-4a70-a6d2-0ce27a2ad067)
+According to Justice (2020, p. 77), since a half adder is built using logic gates and has a limited number of inputs, we can represent all possible outputs using the truth table below. This allows us to verify various results. For example, adding 0 + 0 results in a sum of 0, while 1 + 1 produces a sum of 0 with a carry of 1.
+![image](https://github.com/user-attachments/assets/cb0f48e9-8d4f-4db7-92e5-ca14da4fd7b8)
+
 
 
 
