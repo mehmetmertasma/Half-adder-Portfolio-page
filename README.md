@@ -34,7 +34,10 @@ However, a half adder is just one small part of the equation. To add numbers lar
 
 Half and full adders chained together allow computers to calculate not only binary numbers, but decimal numbers by extension. A four-bit adder, for example, can handle numbers from 0-15. 0000 in binary represents 0 in decimal, and 1111 in binary represents 15. The cap increases exponentially with every new full adder. This means that an 8-bit adder would be able to handle numbers from 0-255 (0 - 11111111 in binary)! This technology is how the first solid-state transistor calculator, the IBM 608, was created in 1955.
 ![image](https://github.com/user-attachments/assets/1c419b34-f1b4-43b4-bd72-921d937d8c6c)
+
 While this may look a set of kitchen appliances, this calculator is capable of dealing with up to 18-digit decimal numbers in fractions of a second. All thanks to boards that don't function much differently than the one we created. Of course calculators have become much smaller since then, but early calculators go to show how far we've come in computing power.
+
+
 References
 
 Cruz, F. (2001, January). The IBM 608 Calculator. Columbia University. Retrieved September 23, 2024, from https://www.columbia.edu/cu/computinghistory/608.html
