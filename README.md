@@ -3,16 +3,22 @@ The purpose of this repository is to demonstrate my understanding of binary addi
 As a brief recap, binary numbers consist only of 0s and 1s, unlike decimal numbers, which use digits from 0 to 9. Because binary has fewer digits, numbers grow in size more quickly compared to decimal. For example, the decimal sequence 0, 1, 2, 3, 4, 5 corresponds to 0, 1, 10, 11, 100, 101 in binary.
 ![halfadderdiagram (1)](https://github.com/user-attachments/assets/cc678aa9-826d-44bf-bc0a-81150e22a55a)
 (Justice, 2020, p. 76)
+
 In the diagram, the half adder (HA) takes two inputs, A and B, representing the two binary digits to be added. The sum is output through S, while Cout represents the carry digit, which is passed to the next place value. The half adder consists of two logic gates: an XOR gate and an AND gate. The XOR gate computes the sum, while the AND gate determines the carry value.
 ![halfaddergates](https://github.com/user-attachments/assets/70be830b-f2a4-4a70-a6d2-0ce27a2ad067)
-According to Justice (2020, p. 77), since a half adder is built using logic gates and has a limited number of inputs, we can represent all possible outputs using the truth table below. This allows us to verify various results. For example, adding 0 + 0 results in a sum of 0, while 1 + 1 produces a sum of 0 with a carry of 1.
+According to Justice (2020, p. 77),
+since a half adder is built using logic gates and has a limited number of inputs, we can represent all possible outputs using the truth table below. This allows us to verify various results. For example, adding 0 + 0 results in a sum of 0, while 1 + 1 produces a sum of 0 with a carry of 1.
 ![image](https://github.com/user-attachments/assets/cb0f48e9-8d4f-4db7-92e5-ca14da4fd7b8)
 (Justice, 2020, p. 77)
+
 With all of this information in mind, we can now recreate a half adder using integrated circuits. The integrated circuits I'll be using are simply multiple logic gates packed onto one chip. I'll use the circuit diagram below to construct a simple half adder circuit.
 ![image](https://github.com/user-attachments/assets/a6f7eb6c-21d1-43e5-b51a-be5069780679)
 (Justice, 2020, p. 90)
+
 ![image](https://github.com/user-attachments/assets/88519da9-4b85-477f-9100-3bb2949b400c)
+
 In the image above, the half adder is adding two binary zeros together. This explains why both the S and Cout LEDs are off—since 0 + 0 results in a sum of 0 and a carry of 0. To change the bits being added, we simply need to toggle either the first or last switch. Below, I flip switch B on, meaning the half adder is now adding 0 and 1 together.
+
 ![image](https://github.com/user-attachments/assets/cda51271-37ff-42e6-bb7a-e8524d02ef81)
 This combination illuminates the S LED because 0 + 1 equals 1. Both of these examples make sense, but something interesting happens when we flip both inputs on.
 ![image](https://github.com/user-attachments/assets/350a11e0-877f-4353-8d64-086b6150aa00)
